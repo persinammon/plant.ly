@@ -6,11 +6,17 @@ import { Spinner, CornerDialog, Dialog, TagInput, Overlay, FileUploader, FileCar
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <FileUpload />
-        <SubmitButton action="../../post" method="post" />
-
-      </header>
+      <div className="App-body">
+        <div id="left">
+          <FileUpload />
+          <SubmitButton action="../../post" method="post" />
+        </div>
+        <div id="right">
+          <img />
+        </div>
+      </div>
+      <footer className="App-footer">
+      </footer>
     </div>
   );
 }
@@ -57,11 +63,9 @@ function FileUpload() {
 
 function SubmitButton() {
   return (
-    <>
       <Button appearance="primary">
-        Primary
+        Identify Species
       </Button>
-    </>
   )
 }
 
